@@ -41,13 +41,19 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-5. Run your server
+5. Collect all static files in static folder
+
+```
+python manage.py collectstatic
+```
+
+6. Run your server
 
 ```
 python manage.py runserver
 ```
 
-6. If you want to use a template color other than blue, Go to Admin page > Templates > Add the the name of below templates, which you want to use color of:
+7. If you want to use a template color other than blue, Go to Admin page > Templates > Add the the name of below templates, which you want to use color of:
 
 - "Default Blue"
 - "Default Green"

@@ -16,26 +16,38 @@ Final Generated Resume Sample
 Installation
 ------
 
-1. Install all required packages from requirements.txt
+1. Clone the repository
+
+```
+git clone https://github.com/ozntel/django-cv-builder.git
+```
+
+2. Install all required packages from requirements.txt
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Complete all of the migrations
+3. Complete all of the migrations
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-3. Create a super user for yourself
+4. Create a super user for yourself
 
 ```
 python manage.py createsuperuser
 ```
 
-4. If you want to use a template color other than blue, Go to Admin page > Templates > Add the the name of below templates, which you want to use color of:
+5. Run your server
+
+```
+python manage.py runserver
+```
+
+6. If you want to use a template color other than blue, Go to Admin page > Templates > Add the the name of below templates, which you want to use color of:
 
 - "Default Blue"
 - "Default Green"
@@ -50,7 +62,8 @@ In linux, you can use the following command to be able to install:
 sudo apt-get install -y wkhtmltopdf xvfb
 ```
 
-Otherwise, you can always print the CV using Google Chrome's built-in "Print to PDF" functionality.
+Otherwise, the view created for downloading the PDF version of the CV will create an error.
+However, you can always print the CV using Google Chrome's built-in "Print to PDF" functionality.
 
 If you liked the application, you can always show your appreciation by starring my repo :) 
 
